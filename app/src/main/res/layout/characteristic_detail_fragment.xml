@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/lightgray">
+    	
+	    <Button
+	        android:id="@+id/but_back"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentLeft="true"
+    		android:layout_marginLeft="5dp"
+    		android:text="@string/str_back"
+    		android:textSize="20sp"
+    		android:background="@android:color/transparent"/>
+
+	</RelativeLayout>
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="16sp"
+	    	android:text="@string/str_service"/>
+	    
+	    <TextView 
+	        android:id="@+id/txt_ServiceName"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="16sp"
+	    	android:text="Service Name"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="12sp"
+	    	android:text="@string/str_uuid"/>
+	    
+	    <TextView 
+	        android:id="@+id/txt_ServiceUUID"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="12sp"
+	    	android:text="Service UUID"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="16sp"
+	    	android:text="@string/str_characteristic"/>
+	    
+	    <TextView 
+	        android:id="@+id/txt_CharacteristicName"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="16sp"
+	    	android:text="Characteristic Name"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="12sp"
+	    	android:text="@string/str_uuid"/>
+	    
+	    <TextView 
+	        android:id="@+id/txt_CharacteristicUUID"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="12sp"
+	    	android:text="Characteristic UUID"/>
+	</LinearLayout>
+	
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="15dp"
+	    android:layout_marginRight="5dp">
+	    
+	    <Button 
+	        android:id="@+id/but_read"
+	        android:layout_width="100dp"
+	        android:layout_height="50dp"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/str_read"/>
+	    
+	    <Button 
+	        android:id="@+id/but_notify"
+	        android:layout_width="100dp"
+	        android:layout_height="50dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/str_notify"/>
+	    
+	    <Button 
+	        android:id="@+id/but_write"
+	        android:layout_width="100dp"
+	        android:layout_height="50dp"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/str_write"/>
+	</RelativeLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="5dp"
+	    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="泡茶次数: 正在测量"/>
+        <TextView
+            android:id="@+id/txt_value1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="泡茶温度: 正在测量"/>
+	    
+	    <EditText
+	        android:id="@+id/edittxt_value" 
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="14sp"
+	    	android:inputType="number"
+	    	android:hint="value"/>
+	    
+	</LinearLayout>
+	
+
+</LinearLayout>
